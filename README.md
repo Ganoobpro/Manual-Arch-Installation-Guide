@@ -36,7 +36,6 @@ Check connection:
 ```
 ping www.google.com
 ```
-```
 
 ## Partition the disks
 
@@ -51,11 +50,13 @@ Part 3. (The rest) # File system partition
 # Finally, WRITE to save changes
 
 Check partitions:
+
 ```
 lsblk
 ```
 
 ### Format the partitions
+
 ```
 mkfs.ext4 /dev/sda3
 mkfs.fat -F 32 /dev/sda1
