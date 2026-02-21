@@ -1,0 +1,4 @@
+```
+sudo pacman -Syu hyprland hyprpaper xdg-desktop-portal-hyprland waybar wofi kitty sddm
+sudo systemctl enable sddm.service
+```
