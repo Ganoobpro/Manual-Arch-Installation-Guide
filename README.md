@@ -37,6 +37,8 @@ Check connection:
 ping www.google.com
 ```
 
+
+
 ## Partition the disks
 
 ```
@@ -77,6 +79,8 @@ mkdir -p /mnt/boot/efi
 mount /dev/sda1 /mnt/boot/efi
 swapon /dev/sda2
 ```
+
+
 
 ## Install Arch Linux (literally)
 
@@ -177,5 +181,7 @@ systemctl enable NetworkManager # Enable networkmanager
 grub-install /dev/sda # Install grub
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
+
+
 
 ## Done, now REBOOT into Arch btw
