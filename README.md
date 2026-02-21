@@ -115,6 +115,12 @@ genfstab /mnt # Just show what genfstab does
 genfstab -U /mnt >> /mnt/etc/fstab
 ```
 
+### Change to new system
+
+```
+arch-chroot /mnt
+```
+
 ### Date
 
 ```
