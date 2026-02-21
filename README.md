@@ -44,9 +44,13 @@ cfdisk
 ```
 
 ### Delete all partitions, then devide the into 3 parts:
+
 Part 1. 1G         # Boot partition
+
 Part 2. 4G         # Swap partition
+
 Part 3. (The rest) # File system partition
+
 # Finally, WRITE to save changes
 
 Check partitions:
@@ -89,8 +93,11 @@ pacstrap -K /mnt base linux linux-firmware sof-firmware base-devel grub efibootm
 ```
 
 sof-firmware: low-level audio process
+
 base-devel:   package group that includes tools needed for building (compiling and linking)
+
 grub:         boot loader
+
 efibootmgr:   because using ufi system
 
 ## Configure the system
@@ -116,6 +123,7 @@ hwclock --systohc # Sync the hardware clock with system clock
 ### Localization
 
 Go to file /etc/locale.gen, remove # from #en_US.UTF-8 UTF-8
+
 Type 'LANG=en_US.UTF-8' into /etc/locale.conf:
 
 ```
@@ -133,8 +141,6 @@ Password for root:
 
 ```
 passwd
-```
-```
 ```
 
 Add users:
