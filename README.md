@@ -185,7 +185,7 @@ systemctl enable NetworkManager # Enable networkmanager
 
 ```
 grub-install /dev/sda # Install grub
-grub-mkconfig -o /boot/grub/grub.cfg
+grub-mkconfig -o /boot/grub/grub.cfg --removable
 ```
 
 
